@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TANI CERDAS — platform belajar dan pendampingan pertanian untuk petani, mahasiswa, penyuluh, dan masyarakat.">
+  <title>TANI CERDAS — Tumbuh Bersama Pengetahuan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&family=OpenDyslexic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="TANI CERDAS, beranda">
+      <span class="brand-mark" aria-hidden="true">🌱</span>
+      <span><strong>TANI CERDAS</strong><small>Tumbuh bersama pengetahuan</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">About Us</a>
+      <a href="#komoditas">Komoditas</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#artikel">Artikel</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="access-button" id="openAccess" aria-haspopup="dialog">⚙ Aksesibilitas</button>
+  </header>
+
+  <main id="konten">
+    <section class="hero section" id="beranda">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">🌾 Teman tumbuh untuk pertanian Indonesia</span>
+        <h1>Solusi cerdas untuk pertanian yang <em>lebih produktif.</em></h1>
+        <p>Belajar budidaya, hitung kebutuhan pupuk, dan pantau perkembangan tanaman dalam satu tempat yang mudah digunakan.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#komoditas">Jelajahi Komoditas <span>↗</span></a>
+          <a class="btn btn-secondary" href="#kalkulator">Hitung Pupuk</a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span> Informasi praktis untuk petani, mahasiswa, dan penyuluh.</div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image" role="img" aria-label="Hamparan sawah hijau"></div>
+        <div class="floating-card floating-top"><span class="mini-icon">🌿</span><span><b>Belajar bertani</b><small>Langkah demi langkah</small></span></div>
+        <div class="floating-card floating-bottom"><span class="mini-icon yellow">✦</span><span><b>Hitung lebih tepat</b><small>Sesuai data lahanmu</small></span></div>
+        <span class="decor decor-one"></span><span class="decor decor-two"></span>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Manfaat platform">
+      <div><span>🌱</span><b>Belajar</b><small>Panduan budidaya</small></div>
+      <div><span>🧮</span><b>Menghitung</b><small>Kalkulator pertanian</small></div>
+      <div><span>📈</span><b>Memantau</b><small>Catatan pertumbuhan</small></div>
+      <div><span>🤝</span><b>Berkolaborasi</b><small>Berbagi pengetahuan</small></div>
+    </section>
+
+    <section class="section" id="layanan">
+      <div class="section-heading">
+        <span class="eyebrow">Layanan TANI CERDAS</span>
+        <h2>Mulai dari kebutuhan pertanianmu</h2>
+        <p>Alat sederhana untuk membantu proses belajar dan kegiatan budidaya sehari-hari.</p>
+      </div>
+      <div class="service-grid">
+        <a class="service-card" href="#kalkulator"><span class="service-icon green">🧮</span><h3>Kalkulator Pupuk</h3><p>Hitung kebutuhan produk pupuk dari dosis unsur hara dan luas lahan.</p><span class="card-link">Coba kalkulator <b>↗</b></span></a>
+        <a class="service-card" href="#perkecambahan"><span class="service-icon yellow">🌰</span><h3>Uji Perkecambahan</h3><p>Ketahui persentase benih yang berhasil berkecambah.</p><span class="card-link">Hitung perkecambahan <b>↗</b></span></a>
+        <a class="service-card" href="#pantau"><span class="service-icon blue">📈</span><h3>Pantau Tanaman</h3><p>Simpan catatan pengamatan dan lihat riwayat perkembangan tanaman.</p><span class="card-link">Buat catatan <b>↗</b></span></a>
+        <a class="service-card" href="#panduan"><span class="service-icon peach">📚</span><h3>Panduan Budidaya</h3><p>Kenali tahapan budidaya dan hal yang perlu diperhatikan.</p><span class="card-link">Pelajari panduan <b>↗</b></span></a>
+      </div>
+    </section>
+
+    <section class="section crop-section" id="komoditas">
+      <div class="section-heading heading-row">
+        <div><span class="eyebrow">Kenali tanamanmu</span><h2>Jelajahi komoditas</h2><p>Pilih komoditas untuk melihat ringkasan dan panduan awal.</p></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="cropSearch" type="search" placeholder="Cari komoditas..." aria-label="Cari komoditas"></label>
+      </div>
+      <div class="crop-grid" id="cropGrid">
+        <article class="crop-card" data-name="padi beras tanaman pangan"><div class="crop-photo photo-rice" role="img" aria-label="Padi di sawah"><span>Tanaman pangan</span></div><div class="crop-info"><h3>Padi</h3><p>Tanaman pangan utama yang membutuhkan pengelolaan air dan hara sesuai kondisi lahan.</p><button class="text-button crop-detail" data-crop="Padi">Lihat ringkasan <span>→</span></button></div></article>
+        <article class="crop-card" data-name="jagung tanaman pangan"><div class="crop-photo photo-corn" role="img" aria-label="Tongkol jagung"><span>Tanaman pangan</span></div><div class="crop-info"><h3>Jagung</h3><p>Perhatikan kualitas benih, jarak tanam, air, dan pemupukan sesuai fase tumbuh.</p><button class="text-button crop-detail" data-crop="Jagung">Lihat ringkasan <span>→</span></button></div></article>
+        <article class="crop-card" data-name="cabai sayuran buah"><div class="crop-photo photo-chili" role="img" aria-label="Cabai merah"><span>Sayuran buah</span></div><div class="crop-info"><h3>Cabai</h3><p>Pengamatan rutin membantu mengenali gejala hama, penyakit, dan gangguan pertumbuhan.</p><button class="text-button crop-detail" data-crop="Cabai">Lihat ringkasan <span>→</span></button></div></article>
+        <article class="crop-card" data-name="tomat sayuran buah"><div class="crop-photo photo-tomato" role="img" aria-label="Buah tomat merah"><span>Sayuran buah</span></div><div class="crop-info"><h3>Tomat</h3><p>Perhatikan drainase, dukungan tanaman, dan pemantauan buah selama budidaya.</p><button class="text-button crop-detail" data-crop="Tomat">Lihat ringkasan <span>→</span></button></div></article>
+        <article class="crop-card" data-name="pakcoy sayuran daun"><div class="crop-photo photo-pakcoy" role="img" aria-label="Sayuran pakcoy"><span>Sayuran daun</span></div><div class="crop-info"><h3>Pakcoy</h3><p>Sayuran daun yang perlu mendapat air cukup dan pemantauan kondisi daun secara berkala.</p><button class="text-button crop-detail" data-crop="Pakcoy">Lihat ringkasan <span>→</span></button></div></article>
+        <article class="crop-card" data-name="kedelai kacang-kacangan"><div class="crop-photo photo-soy" role="img" aria-label="Tanaman kedelai"><span>Kacang-kacangan</span></div><div class="crop-info"><h3>Kedelai</h3><p>Catat pertumbuhan vegetatif, pembentukan polong, dan kondisi tanaman menjelang panen.</p><button class="text-button crop-detail" data-crop="Kedelai">Lihat ringkasan <span>→</span></button></div></article>
+      </div>
+      <p class="small-note">Foto pada kartu merupakan visual ilustratif. Rekomendasi budidaya perlu disesuaikan dengan varietas dan kondisi setempat.</p>
+    </section>
+
+    <section class="section calculator-section" id="kalkulator">
+      <div class="section-heading"><span class="eyebrow">Hitung berdasarkan data</span><h2>Kalkulator kebutuhan pupuk</h2><p>Masukkan dosis rekomendasi dan kadar pada label pupuk untuk menghitung kebutuhan produk.</p></div>
+      <div class="calculator-layout">
+        <form class="panel form-panel" id="fertilizerForm">
+          <div class="form-grid">
+            <label>Komoditas<select id="fertCrop"><option>Padi</option><option>Jagung</option><option>Cabai</option><option>Tomat</option><option>Pakcoy</option><option>Kedelai</option><option>Komoditas lainnya</option></select></label>
+            <label>Luas lahan<input id="landArea" type="number" min="0.0001" step="any" value="100" required><small>Masukkan angka lebih dari 0.</small></label>
+            <label>Satuan luas<select id="areaUnit"><option value="m2">Meter persegi (m²)</option><option value="ha">Hektare (ha)</option></select></label>
+            <label>Unsur hara yang dihitung<select id="nutrient"><option value="N">Nitrogen (N)</option><option value="P2O5">Fosfat (P₂O₅)</option><option value="K2O">Kalium (K₂O)</option><option value="custom">Unsur lain / komposisi khusus</option></select></label>
+            <label>Dosis rekomendasi (kg/ha)<input id="dose" type="number" min="0" step="any" value="100" required><small>Gunakan rekomendasi sesuai komoditas dan kondisi lahan.</small></label>
+            <label>Nama pupuk<input id="fertName" type="text" value="Urea" required></label>
+            <label>Kadar unsur terkait (%)<input id="fertPercent" type="number" min="0.01" max="100" step="any" value="46" required><small>Periksa label kemasan pupuk.</small></label>
+          </div>
+          <button class="btn btn-primary full-width" type="submit">Hitung Kebutuhan Pupuk</button>
+          <p class="form-disclaimer">Kalkulator ini menghitung kebutuhan produk berdasarkan dosis unsur yang kamu masukkan, bukan menentukan dosis rekomendasi agronomis.</p>
+        </form>
+        <div class="result-panel" id="fertResult" aria-live="polite">
+          <div class="result-top"><span class="result-icon">🌿</span><span class="eyebrow">Hasil perhitungan</span></div>
+          <h3>Kebutuhan pupukmu</h3>
+          <p class="muted">Isi data di sebelah kiri, lalu tekan tombol hitung.</p>
+          <div class="result-number">— <small>kg</small></div>
+          <div class="result-detail" id="fertDetail">Hasil perhitungan akan ditampilkan di sini.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="perkecambahan">
+      <div class="split-copy"><span class="eyebrow">Uji kualitas benih</span><h2>Berapa benih yang berhasil berkecambah?</h2><p>Catat jumlah benih yang diuji dan jumlah benih yang berkecambah. TANI CERDAS akan menghitung persentasenya.</p><div class="formula-chip">Perkecambahan (%) = benih berkecambah ÷ benih diuji × 100</div></div>
+      <form class="panel germ-form" id="germForm">
+        <label>Nama komoditas<input id="germCrop" type="text" placeholder="Contoh: Jagung" value="Jagung"></label>
+        <div class="form-grid two">
+          <label>Benih yang diuji<input id="seedsTested" type="number" min="1" step="1" value="100" required></label>
+          <label>Benih berkecambah<input id="seedsSprouted" type="number" min="0" step="1" value="85" required></label>
+        </div>
+        <button class="btn btn-primary full-width" type="submit">Hitung Perkecambahan</button>
+        <div class="germ-result" id="germResult" aria-live="polite"><strong>85%</strong><span>85 dari 100 benih berkecambah.</span></div>
+      </form>
+    </section>
+
+    <section class="section tracking-section" id="pantau">
+      <div class="section-heading heading-row"><div><span class="eyebrow">Catatan lapangan</span><h2>Pantau pertumbuhan tanaman</h2><p>Simpan pengamatan agar perkembangan tanaman mudah dibandingkan.</p></div><span class="saved-badge" id="recordCount">0 catatan tersimpan</span></div>
+      <div class="tracking-layout">
+        <form class="panel" id="growthForm">
+          <h3>Tambah pengamatan</h3>
+          <label>Nama tanaman<input id="growthCrop" type="text" placeholder="Contoh: Jagung" required></label>
+          <div class="form-grid two">
+            <label>Tanggal<input id="growthDate" type="date" required></label>
+            <label>Tinggi tanaman (cm)<input id="growthHeight" type="number" min="0" step="any" placeholder="Contoh: 25"></label>
+          </div>
+          <label>Catatan kondisi<textarea id="growthNotes" rows="3" placeholder="Contoh: daun hijau, kondisi tanah lembap..."></textarea></label>
+          <button class="btn btn-primary full-width" type="submit">Simpan Pengamatan</button>
+          <p class="form-disclaimer">Catatan disimpan di browser/perangkat ini, bukan dikirim ke server.</p>
+        </form>
+        <div class="panel records-panel"><div class="records-heading"><h3>Riwayat pengamatan</h3><button class="text-button" id="clearRecords" type="button">Hapus semua</button></div><div id="growthRecords" class="records-list"><p class="empty-state">Belum ada catatan. Tambahkan pengamatan pertamamu.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section guide-section" id="panduan">
+      <div class="section-heading"><span class="eyebrow">Belajar dari dasar</span><h2>Langkah awal budidaya yang terencana</h2><p>Gunakan daftar ini sebagai pengingat umum. Detail praktik perlu disesuaikan dengan komoditas dan kondisi lahan.</p></div>
+      <div class="guide-list">
+        <details><summary><span>01</span> Persiapan lahan dan media tanam</summary><p>Amati kondisi lahan, drainase, sumber air, dan kondisi tanah. Lakukan pengolahan sesuai sistem budidaya serta kebutuhan komoditas.</p></details>
+        <details><summary><span>02</span> Pemilihan benih dan penanaman</summary><p>Pilih benih bermutu dan varietas yang sesuai dengan lingkungan. Perhatikan kebutuhan penyemaian, jarak tanam, serta kedalaman tanam.</p></details>
+        <details><summary><span>03</span> Pemupukan dan pengairan</summary><p>Gunakan dosis berdasarkan rekomendasi yang relevan, kondisi tanah, dan fase pertumbuhan. Catat jenis, jumlah, serta tanggal pemberian pupuk.</p></details>
+        <details><summary><span>04</span> Pengamatan hama dan penyakit</summary><p>Periksa tanaman secara berkala. Catat gejala, bagian tanaman yang terdampak, dan luas serangan sebelum menentukan tindakan pengendalian.</p></details>
+        <details><summary><span>05</span> Panen dan evaluasi hasil</summary><p>Panen pada tingkat kematangan yang sesuai. Catat jumlah hasil, mutu, biaya, dan kendala untuk evaluasi musim tanam berikutnya.</p></details>
+      </div>
+    </section>
+
+    <section class="section about-section" id="tentang">
+      <div class="about-visual"><div class="about-photo" role="img" aria-label="Petani merawat tanaman di lahan pertanian"></div><div class="about-stamp">Tumbuh<br>bersama 🌱</div></div>
+      <div class="about-copy"><span class="eyebrow">Tentang TANI CERDAS</span><h2>Pengetahuan pertanian, lebih dekat dan mudah diakses.</h2><p>TANI CERDAS adalah konsep platform digital untuk membantu petani, mahasiswa pertanian, penyuluh, dan masyarakat umum mengakses informasi pertanian secara praktis.</p><p>Melalui katalog komoditas, panduan budidaya, dan alat hitung sederhana, kami ingin mendukung proses belajar serta pengambilan keputusan yang lebih terencana.</p><div class="values"><div><b>Praktis</b><small>Informasi mudah dipahami</small></div><div><b>Inklusif</b><small>Memperhatikan aksesibilitas</small></div><div><b>Berbasis data</b><small>Asumsi dan sumber dijelaskan</small></div></div></div>
+    </section>
+
+    <section class="section articles-section" id="artikel">
+      <div class="section-heading heading-row"><div><span class="eyebrow">Wawasan pertanian</span><h2>Ruang belajar</h2><p>Topik dasar untuk menambah pengetahuan pertanian.</p></div></div>
+      <div class="article-grid">
+        <article class="article-card"><div class="article-art art-soil">🌱</div><div class="article-body"><span class="article-category">Kesehatan tanah</span><h3>Mengapa kondisi tanah perlu diamati sebelum memupuk?</h3><p>Kenali peran kondisi tanah dalam menentukan pengelolaan hara.</p><a href="#kalkulator">Pelajari kalkulator →</a></div></article>
+        <article class="article-card"><div class="article-art art-seed">🌰</div><div class="article-body"><span class="article-category">Benih</span><h3>Mengenal persentase perkecambahan benih</h3><p>Gunakan pengujian sederhana untuk mencatat benih yang tumbuh.</p><a href="#perkecambahan">Coba kalkulator →</a></div></article>
+        <article class="article-card"><div class="article-art art-notes">📋</div><div class="article-body"><span class="article-category">Pencatatan</span><h3>Manfaat catatan pertumbuhan di lahan</h3><p>Catatan teratur membantu membandingkan kondisi tanaman dari waktu ke waktu.</p><a href="#pantau">Mulai mencatat →</a></div></article>
+      </div>
+      <p class="small-note">Bagian ruang belajar ini berisi materi pengantar. Untuk keputusan budidaya, gunakan sumber resmi dan rekomendasi setempat.</p>
+    </section>
+
+    <section class="contact-banner section" id="kontak"><div><span class="eyebrow">Ada masukan?</span><h2>Mari tumbuh bersama.</h2><p>Bagikan ide agar platform pertanian ini semakin bermanfaat.</p></div><a class="btn btn-light" href="mailto:halo@tanicerdas.example?subject=Masukan%20TANI%20CERDAS">Kirim masukan <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><div class="footer-brand"><a class="brand" href="#beranda"><span class="brand-mark">🌱</span><span><strong>TANI CERDAS</strong><small>Tumbuh bersama pengetahuan</small></span></a><p>Ruang belajar digital untuk pertanian yang lebih terencana, inklusif, dan berkelanjutan.</p></div><div><h3>Jelajahi</h3><a href="#komoditas">Komoditas</a><a href="#panduan">Panduan Budidaya</a><a href="#kalkulator">Kalkulator Pupuk</a><a href="#artikel">Ruang Belajar</a></div><div><h3>Informasi</h3><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a><button class="footer-link" id="footerAccess">Pengaturan aksesibilitas</button></div><div><h3>Catatan</h3><p class="footer-note">Informasi di website ini bersifat edukatif. Sesuaikan rekomendasi dengan kondisi lahan dan sumber teknis yang tepercaya.</p></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> TANI CERDAS. Prototipe website edukasi pertanian.</span><a href="#beranda">Kembali ke atas ↑</a></div>
+  </footer>
+
+  <dialog class="access-dialog" id="accessDialog" aria-labelledby="accessTitle">
+    <form method="dialog" class="dialog-head"><div><span class="eyebrow">Tampilan pribadi</span><h2 id="accessTitle">Aksesibilitas</h2></div><button class="close-button" aria-label="Tutup pengaturan">×</button></form>
+    <div class="access-controls">
+      <label>Jenis huruf<select id="fontChoice"><option value="standard">Standar (Nunito Sans)</option><option value="dyslexic">OpenDyslexic (jika tersedia)</option></select></label>
+      <div class="setting-row"><span>Ukuran teks</span><div class="stepper"><button type="button" id="fontDown" aria-label="Perkecil teks">A−</button><output id="fontSizeOutput">100%</output><button type="button" id="fontUp" aria-label="Perbesar teks">A+</button></div></div>
+      <label>Warna tampilan<select id="themeChoice"><option value="soft">Krem lembut</option><option value="dim">Redup</option><option value="contrast">Kontras tinggi</option></select></label>
+      <div class="setting-row"><span>Kurangi animasi</span><label class="switch"><input id="reduceMotion" type="checkbox"><span class="switch-track"></span></label></div>
+      <p class="form-disclaimer">Pengaturan ini membantu menyesuaikan tampilan. Kebutuhan tiap pengguna berbeda; pilih kombinasi yang paling nyaman.</p>
+      <button type="button" class="btn btn-secondary full-width" id="resetAccess">Kembalikan pengaturan awal</button>
+    </div>
+  </dialog>
+
+  <dialog class="crop-dialog" id="cropDialog" aria-labelledby="cropDialogTitle">
+    <form method="dialog" class="dialog-head"><div><span class="eyebrow">Ringkasan komoditas</span><h2 id="cropDialogTitle">Komoditas</h2></div><button class="close-button" aria-label="Tutup ringkasan">×</button></form>
+    <div id="cropDialogContent"></div>
+    <a class="btn btn-primary full-width" id="cropCalcLink" href="#kalkulator">Hitung kebutuhan pupuk</a>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
